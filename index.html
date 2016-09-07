@@ -1,0 +1,267 @@
+<html>
+	<head>
+		<title>Redde | Financiera</title>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<meta name="description" content="Prestamos transparentes para microempresas y emergencias">
+		<meta name="keywords" content="Financiera, Prestamos">
+		<meta name="author" content="NUVA.ROCKS">
+		<meta name="robots" content="all" />
+		<meta name="googlebot" content="all" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="manifest.json">
+		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+		<script src="javascripts/jquery-3.1.0.min.js"></script>	
+		<script src="javascripts/TweenMax.min.js"></script>	
+		<script src="javascripts/TimelineMax.min.js"></script>	
+		<script src="javascripts/plugins/CSSPlugin.min.js"></script>	
+		<script src="javascripts/plugins/ScrollToPlugin.min.js"></script>	
+		<script src="javascripts/main.js"></script>
+	</head>
+
+	<body>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load('current', {'packages':['geomap']});
+    google.charts.setOnLoadCallback(drawMap);
+
+      function drawMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+          ['Germany', 200],
+          ['United States', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700]
+        ]);
+
+        var options = {};
+        options['dataMode'] = 'regions';
+
+        var container = document.getElementById('regions_div');
+        var geomap = new google.visualization.GeoMap(container);
+
+        geomap.draw(data, options);
+      };
+    </script>
+
+
+		<div id="navbar">
+			<img src="images/logo.svg" alt="Logotipo de Redde Financiera">
+			<div class="menu" id="menu">
+				<a id="section-1-link">Nuestros<br>créditos</a>
+				<a id="section-2-link">Beneficios</a>
+				<a id="section-3-link">Contacto</a>
+				<a id="section-4-link">Llamar ahora al<br>01-800-444-4444</a>
+			</div>
+		</div>
+		<div id="burger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div id="page">
+			<div id="slider-container">
+				<div id="slider">
+					<div class="slide">
+						<div class="overlay"></div>
+						<h4>Prestámos accesibles<br>para tus proyectos de vida.</h4>
+					</div>
+					<div class="slide">
+						<div class="overlay"></div>
+						<h4>Créditos para crecer.</h4>
+						<p>En Redde Financiera te ayudamos a crecer tu negocio con préstamos flexibles.</p>
+					</div>
+					<div class="slide">
+						<div class="overlay"></div>
+						<h4>Emprendedoras.</h4>
+						<p>Juntos lograremos que tus metas se cumplan.</p>
+					</div>
+					<div class="slide">
+						<div class="overlay"></div>
+						<h4>Menos de 24 HRS</h4>
+						<p>Te apoyamos en cualquier emergencia.</p>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="section-title" id="section-1">Escoge el producto <br>que más te conviene</h2>
+
+			<div id="services">
+				<div class="service" id="business-summary">
+					<div class="service__image"></div>
+					<h4>Créditos para Negocios</h4>
+					<p>Te ayudamos a crecer. </p>
+					<a id="link-to-business" class="logo">Redde | Negocio</a>
+				</div>
+				<div class="service" id="women-summary">
+					<div class="service__image"></div>
+					<h4>Créditos para Mujeres Emprendedoras</h4>
+					<p>Muy pocos requisitos.</p>
+					<a id="link-to-group" class="logo">Redde | Grupal</a>
+				</div>
+				<div class="service" id="emergencies-summary">
+					<div class="service__image"></div>
+					<h4>Créditos para Emergencias</h4>
+					<p>En menos de 24 horas.</p>
+					<a id="link-to-pronto" class="logo">Redde | Pronto</a>
+				</div>
+			</div>
+
+			<h2 class="section-title" id="section-2">¿Cómo te podemos ayudar?</h2>
+
+			<div id="added-value">
+				<div class="value__row">
+					<div class="value">
+						<div class="icon-container">
+							<img class="icon" src="images/key.svg" alt="">
+						</div>
+						<p>Inicia tu primer crédito con nosotros.</p>
+					</div>
+					<div class="value">
+						<div class="icon-container">
+							<img class="icon" src="images/house.svg" alt="">
+						</div>
+						<p>Vamos a tu casa o negocio</p>
+					</div>
+				</div>
+				<div class="value__row">
+					<div class="value">
+						<div class="icon-container">
+							<img class="icon" src="images/pin.svg" alt="">
+						</div>
+						<p>Realiza tus pagos fácilmente en OXXO.</p>
+					</div>
+					<div class="value">
+						<div class="icon-container">
+							<img class="icon" src="images/gift.svg" alt="">
+						</div>
+						<p>Te damos créditos donde otros no.</p>
+					</div>
+				</div>
+				<div class="value__row">
+					<div class="value">
+						<div class="icon-container">
+							<img class="icon" src="images/bulb.svg" alt="">
+						</div>
+						<p>Te explicamos todo y somos transparentes con los pagos.</p>
+					</div>
+					<div class="value">
+						<div class="icon-container">
+							<img class="icon" src="images/heart.svg" alt="">
+						</div>
+						<p>Te acompañamos durante todo el proceso.</p>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="section-title">Nuestros créditos</h2>
+
+			<div id="credits">
+				<div class="credit" id="business">
+					<div class="credit__info">
+						<h4>Redde Negocio</h4>
+						<p>Montos altos para grandes planes. ¿Tienes un negocio? Este crédito es para ti. Enfocados a hombres y mujeres emprendedores que ya cuentan con un negocio y buscan crecerlo más. Sabemos que hoy en día es cada vez más difícil crecer tu negocio, en Redde te apoyamos.</p>
+						<a class="logo link-to-contact">PEDIR</a>
+					</div>
+					<div class="credit-image"></div>
+				</div>
+				<div class="credit" id="group">
+					<div class="credit-image"></div>
+					<div class="credit__info">
+						<h4>Redde Grupal</h4>
+						<p>Prestamos grupales enfocados a mujeres emprendedoras, con pocos requisitos, capacitación y asesoría continua para iniciar o crecer tu negocio. Contamos con asesoras capacitadas, aptas para guiarte y crear vínculos de confianza con nuestros clientas.</p>
+						<a class="logo link-to-contact">PEDIR</a>
+					</div>
+				</div>
+				<div class="credit" id="pronto">
+					<div class="credit__info">
+						<h4>Redde Pronto</h4>
+						<p>Útiles escolares, inscripciones, vacaciones, invertir en tu negocio. ¿Qué necesitas? Te aseguramos un crédito ágil y rápido para resolver cualquier emergencia y satisfacer tus necesidades de dinero sin aval, ni garantías y papelería básica. Siempre cuidando tu salud económica para no sobre endeudarte.</p>
+						<a class="logo link-to-contact">PEDIR CRÉDITO</a>
+					</div>
+					<div class="credit-image"></div>
+				</div>
+			</div>
+
+			<div id="last-section-image"></div>
+	
+			<div id="last-section">
+				<div class="row">
+					<div class="element">
+						<h4>Conócenos</h4>
+						<p>Nos respaldan 15 años de experiencia, motivados en crecer el desarrollo personal y la economía familiar de nuestra comunidad a través de un producto financiero accesible para apoyar actividades generadoras de ingresos y de esta forma, fomentar una cultura empresarial. 
+						Guiados por la Comisión Nacional Bancaria de Valores (CNBV) y Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros (CONDUSEF).</p>
+						<div class="row">
+							<img src="images/CNBV.png" alt="">
+							<img src="images/CONDUSEF.svg" alt="">
+						</div>
+					</div>
+					<div class="element">
+						<h4>Misiones y Valores</h4>
+						<p>Nuestra misión: Otorgar servicios financieros a actividades generadoras de ingresos para desarrollar una cultura empresarial entre los sectores menos favorecidos de nuestro país en el ámbito urbano y rural. <br><br>
+						Nuestros valores son la Honestidad, Innovación , Respeto, Entusiasmo, Trabajo en equipo, Compromiso institucional, y la Mejora continua.</p>
+					</div>
+				</div>
+				<div class="row" id="section-3">
+					<div class="element" id="form">
+						<h4>Comienza a<br>pedir tu crédito</h4>
+						<p>Danos tus datos, y nosotros nos pondrémos en contacto.</p>
+						<form action="https://formspree.io/your@email.com"
+						      method="POST">
+						    <label for="name">Nombre Completo</label>
+						    <input type="text" name="name" placeholder="Escribe aquí tu nombre completo">
+						    <label for="telefono">Teléfono</label>
+						    <input type="tel" name="telefono" placeholder="Escribe aquí tu número de teléfono.">
+						    <label for="">Selecciona el tipo de crédito que quieres:</label>
+
+							<input type="checkbox" name="negocio" id="negocio">
+							<label for="negocio" class="logo">Redde | Negocio</label>
+
+							<input type="checkbox" name="grupal" id="grupal">
+							<label for="grupal" class="logo">Redde | Grupal</label>
+
+							<input type="checkbox" name="pronto" id="pronto">
+							<label for="pronto" class="logo">Redde | Pronto</label>
+						    <input type="submit" value="ENVIAR">
+						</form>
+					</div>
+					<div class="element" id="map">
+						<h4>Sucursales</h4>
+						<p>Estamos en:<br>Zacatecas, San Luis Potosí, Aguascalientes.</p>
+						    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
