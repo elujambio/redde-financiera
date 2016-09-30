@@ -341,7 +341,8 @@ a {
 
 .logo-img img {
   width: 260px;
-  marign-top: 24px; }
+  marign-top: 24px;
+  margin-bottom: 36px; }
 
 #business-summary .service__image {
   background-image: url(../images/negocios.jpg);
