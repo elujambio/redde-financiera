@@ -16,6 +16,15 @@ jQuery(document)
 					TweenMax
 						.to($Navbar, 1, { height: 168 });
 				}
+			} else {
+				if ( $top > 72 ) {
+					TweenMax
+						.to($Navbar, 1, { height:96 });
+						// .to($Navbar, 1, { paddingTop: "18px", paddingBottom: "18px" });
+				} else {
+					TweenMax
+						.to($Navbar, 1, { height: 96 });
+				}				
 			}
 		});
 
@@ -68,32 +77,38 @@ jQuery(document)
 					.to(window, 1, { scrollTo: { y: $("#section-3").offset().top-144 } });
 			});
 		menuToggled = false;
-		jQuery("#burger")
+		function toggleMenu() {
+			if (menuToggled == false) {
+
+					menuToggled = true;
+					TweenMax
+						.to(jQuery("#burger div:nth-of-type(1)"), .5, { y: 6, rotationZ: "45deg"});				
+					TweenMax
+						.to(jQuery("#burger div:nth-of-type(2)"), .5, { opacity: 0 });				
+
+					TweenMax
+						.to(jQuery("#burger div:nth-of-type(3)"), .5, { y: -6, rotationZ: "-45deg"});
+					TweenMax
+						.to(jQuery("#menu"), .5, { x: "-100%" });
+			} else {
+				menuToggled = false;
+				TweenMax
+					.to(jQuery("#burger div:nth-of-type(1)"), .5, { y: 0, rotationZ: "0"});				
+				TweenMax
+					.to(jQuery("#burger div:nth-of-type(2)"), .5, { opacity: 1 });				
+
+				TweenMax
+					.to(jQuery("#burger div:nth-of-type(3)"), .5, { y: 0, rotationZ: "0"});
+				TweenMax
+					.to(jQuery("#menu"), .5, { x: "0%" });
+			}
+		}
+
+		jQuery("#burger, #menu a")
 			.click(function(){
-				if (menuToggled == false) {
-						menuToggled = true;
-						TweenMax
-							.to(jQuery("#burger div:nth-of-type(1)"), .5, { y: 6, rotationZ: "45deg"});				
-						TweenMax
-							.to(jQuery("#burger div:nth-of-type(2)"), .5, { opacity: 0 });				
-
-						TweenMax
-							.to(jQuery("#burger div:nth-of-type(3)"), .5, { y: -6, rotationZ: "-45deg"});
-						TweenMax
-							.to(jQuery("#menu"), .5, { x: "-100%" });
-				} else {
-					menuToggled = false;
-					TweenMax
-						.to(jQuery("#burger div:nth-of-type(1)"), .5, { y: 0, rotationZ: "0"});				
-					TweenMax
-						.to(jQuery("#burger div:nth-of-type(2)"), .5, { opacity: 1 });				
-
-					TweenMax
-						.to(jQuery("#burger div:nth-of-type(3)"), .5, { y: 0, rotationZ: "0"});
-					TweenMax
-						.to(jQuery("#menu"), .5, { x: "0%" });
+				if (window.innerWidth < 1080 ) {
+					toggleMenu();
 				}
-
 			});
 
 });
