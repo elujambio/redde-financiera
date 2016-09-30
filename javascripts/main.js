@@ -55,6 +55,11 @@ jQuery(document)
 				TweenMax
 					.to(window, 1, { scrollTo: { y: $("#section-3").offset().top-144 } });
 			});
+		jQuery("#section-4-link")
+			.click(function(){
+				TweenMax
+					.to(window, 1, { scrollTo: { y: $("#last-section").offset().top-144 } });
+			});
 		jQuery("#link-to-business")
 			.click(function(){
 				console.log("clicked");
