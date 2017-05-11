@@ -755,7 +755,7 @@ a {
     font-size: 14px;
     border: solid 2px #eeb429;
     width: 100%; }
-  #form form input[type="checkbox"] {
+  #form form input[type="radio"] {
     height: 0;
     width: 0;
     margin: 0 0;
